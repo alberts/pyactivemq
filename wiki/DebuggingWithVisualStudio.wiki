@@ -1,0 +1,12 @@
+#summary How to debug pyactivemq with Visual Studio.
+
+= Debugging With Visual Studio =
+
+To set up debugging in Visual Studio, do the following:
+
+  1. Project | pyactivemq Properties... (Alt+F7)
+  1. Configuration Properties | Debugging
+  1. Command: {{{C:\Python24\python.exe}}}
+  1. Command Arguments: {{{..\..\src\test\test.py}}}
+  1. Working Directory: {{{$(SolutionDir)$(ConfigurationName)}}}
+
