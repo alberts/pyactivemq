@@ -1,6 +1,6 @@
 #summary How to debug pyactivemq with Visual Studio.
 
-= Debugging With Visual Studio =
+= Debugging with Visual Studio =
 
 To set up debugging in Visual Studio, do the following:
 
