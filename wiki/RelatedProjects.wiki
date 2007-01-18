@@ -8,5 +8,4 @@ The projects listed below are related to pyactivemq in some way.
 
 These projects also use Boost.Python and might provide some valuable examples for wrapping the trickier parts of the ActiveMQ-CPP library.
 
-  * [http://pyginac.sourceforge.net/ PyGiNaC] ([http://pyginac.cvs.sourceforge.net/pyginac/pyginac/ CVS repository])
-
+  * [http://pyginac.sourceforge.net/ PyGiNaC] ([http://pyginac.cvs.sourceforge.net/pyginac/pyginac/ CVS Browse])
