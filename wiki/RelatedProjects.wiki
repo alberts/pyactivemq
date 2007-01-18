@@ -1,0 +1,12 @@
+#summary Projects related to pyactivemq.
+
+= Related Projects =
+
+The projects listed below are related to pyactivemq in some way.
+
+= Boost.Python =
+
+These projects also use Boost.Python and might provide some valuable examples for wrapping the trickier parts of the ActiveMQ-CPP library.
+
+  * [http://pyginac.sourceforge.net/ PyGiNaC]
+
