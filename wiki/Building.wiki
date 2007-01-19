@@ -7,9 +7,11 @@
   1. {{{svn co http://svn.apache.org/repos/asf/incubator/activemq/activemq-cpp/trunk/activemq-cpp activemq-cpp}}}
   1. {{{svn co http://pyactivemq.googlecode.com/svn/trunk pyactivemq}}}
 
+You should also download ActiveMQ itself. I'm currently testing the code with [http://people.apache.org/repo/m2-snapshot-repository/org/apache/activemq/apache-activemq/4.2-incubator-SNAPSHOT/?C=M;O=D snapshots of ActiveMQ 4.2]. You'll want to download the ZIP or tarball that is about 18 MB in size. Extract the archive and run {{{bin/activemq}}} before running the tests.
+
 = Fedora Core 6 =
 
-  1. {{{yum install automake autoconf libtool python-devel boost-devel}}}
+  1. {{{yum install automake autoconf libtool cppunit-devel python-devel boost-devel}}}
   1. {{{cd activemq-cpp}}}
   1. {{{./autogen.sh && ./configure --prefix=$HOME/opt && make && make install}}}
   1. {{{cd ../pyactivemq}}}
@@ -17,6 +19,16 @@
   1. {{{python setup.py build}}}
   1. {{{src/test/test.py}}}
   1. {{{python setup.py install}}}
+
+If you get the following warning when running {{{autogen.sh}}}:
+
+{{{
+aclocal:configure.ac:74: warning: macro `AM_PATH_CPPUNIT' not found in library
+}}}
+
+you need to install the {{{cppunit-devel}}} package.
+
+On Ubuntu, make sure the {{{libcppunit-dev}}} and {{{uuid-dev}}} packages are installed prior to running {{{configure}}}.
 
 = Windows 2000/XP/Server 2003 =
 
@@ -30,6 +42,9 @@ The Visual Studio 2005 solution files have been configured to find Boost 1.33.1 
   1. Copy {{{win_build\Release\pyactivemq.dll}}} and {{{C:\Program Files\boost\boost_1_33_1\lib\boost_python-vc80-mt-gd-1_33_1.dll}}} to {{{C:\Python24\lib\site-packages}}}.
 
 Copying the Boost DLL will be unnecessary once we figure out why static linking to the Boost libraries doesn't work.
+
+
+
 
 
 
