@@ -28,7 +28,13 @@ aclocal:configure.ac:74: warning: macro `AM_PATH_CPPUNIT' not found in library
 
 you need to install the {{{cppunit-devel}}} package.
 
-On Ubuntu, make sure the {{{libcppunit-dev}}} and {{{uuid-dev}}} packages are installed prior to running {{{configure}}}.
+= Debian/Ubuntu =
+
+The instructions for Ubuntu are almost identical to those for Fedora Core 6. Make sure you have the following packages installed prior to running {{{configure}}}:
+
+ * libboost-python-dev
+ * libcppunit-dev
+ * uuid-dev
 
 = Windows 2000/XP/Server 2003 =
 
@@ -42,6 +48,7 @@ The Visual Studio 2005 solution files have been configured to find Boost 1.33.1 
   1. Copy {{{win_build\Release\pyactivemq.dll}}} and {{{C:\Program Files\boost\boost_1_33_1\lib\boost_python-vc80-mt-gd-1_33_1.dll}}} to {{{C:\Python24\lib\site-packages}}}.
 
 Copying the Boost DLL will be unnecessary once we figure out why static linking to the Boost libraries doesn't work.
+
 
 
 
