@@ -28,6 +28,8 @@ aclocal:configure.ac:74: warning: macro `AM_PATH_CPPUNIT' not found in library
 
 you need to install the {{{cppunit-devel}}} package.
 
+You will need to edit the {{{library_dirs}}} in {{{setup.py}}} to add the directory where you installed the ActiveMQ C++ libraries ({{{$HOME/opt/lib}}} in the example above).
+
 = Debian/Ubuntu =
 
 The instructions for Ubuntu are almost identical to those for Fedora Core 6. Make sure you have the following packages installed prior to running {{{configure}}}:
