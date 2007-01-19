@@ -7,7 +7,16 @@
   1. {{{svn co http://svn.apache.org/repos/asf/incubator/activemq/activemq-cpp/trunk/activemq-cpp activemq-cpp}}}
   1. {{{svn co http://pyactivemq.googlecode.com/svn/trunk pyactivemq}}}
 
-You should also download ActiveMQ itself. I'm currently testing the code with [http://people.apache.org/repo/m2-snapshot-repository/org/apache/activemq/apache-activemq/4.2-incubator-SNAPSHOT/?C=M;O=D snapshots of ActiveMQ 4.2]. You'll want to download the ZIP or tarball that is about 18 MB in size. Extract the archive and run {{{bin/activemq}}} before running the tests.
+= Running the broker =
+
+ActiveMQ is a Java program, so you will need to install Sun's JRE/JDK or one of the other free alternatives to run it. I recommend using the Sun JDK.
+
+You should also download ActiveMQ itself. I'm currently testing the code with [http://people.apache.org/repo/m2-snapshot-repository/org/apache/activemq/apache-activemq/4.2-incubator-SNAPSHOT/?C=M;O=D snapshots of ActiveMQ 4.2], but [http://www.activemq.org/site/activemq-410-release.html ActiveMQ 4.1] should also work. You'll want to download the ZIP or tarball that is about 18 MB in size.
+
+Before running the unit tests, you should start the broker.
+
+ 1. Extract the archive.
+ 1. Run {{{bin/activemq}}}.
 
 = Fedora Core 6 =
 
@@ -50,6 +59,7 @@ The Visual Studio 2005 solution files have been configured to find Boost 1.33.1 
   1. Copy {{{win_build\Release\pyactivemq.dll}}} and {{{C:\Program Files\boost\boost_1_33_1\lib\boost_python-vc80-mt-gd-1_33_1.dll}}} to {{{C:\Python24\lib\site-packages}}}.
 
 Copying the Boost DLL will be unnecessary once we figure out why static linking to the Boost libraries doesn't work.
+
 
 
 
