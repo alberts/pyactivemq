@@ -7,17 +7,6 @@
   1. {{{svn co http://svn.apache.org/repos/asf/incubator/activemq/activemq-cpp/trunk/activemq-cpp activemq-cpp}}}
   1. {{{svn co http://pyactivemq.googlecode.com/svn/trunk pyactivemq}}}
 
-= Running the broker =
-
-ActiveMQ is a Java program, so you will need to install Sun's JRE/JDK or one of the other free alternatives to run it. I recommend using the Sun JDK.
-
-You should also download ActiveMQ itself. I'm currently testing the code with [http://people.apache.org/repo/m2-snapshot-repository/org/apache/activemq/apache-activemq/4.2-incubator-SNAPSHOT/?C=M;O=D snapshots of ActiveMQ 4.2], but [http://www.activemq.org/site/activemq-410-release.html ActiveMQ 4.1] should also work. You'll want to download the ZIP or tarball that is about 18 MB in size.
-
-Before running the unit tests, you should start the broker.
-
- 1. Extract the archive.
- 1. Run {{{bin/activemq}}}.
-
 = Fedora Core 6 =
 
   1. {{{yum install automake autoconf libtool cppunit-devel python-devel boost-devel}}}
@@ -26,8 +15,7 @@ Before running the unit tests, you should start the broker.
   1. {{{cd ../pyactivemq}}}
   1. Edit {{{setup.py}}} to include {{{$HOME/opt/lib}}} as a library directory
   1. {{{python setup.py build}}}
-  1. {{{src/test/test.py}}}
-  1. {{{python setup.py install}}}
+  1. {{{python setup.py install}}} or {{{python setup.py bdist_rpm}}}
 
 If you get the following warning when running {{{autogen.sh}}}:
 
@@ -49,21 +37,48 @@ The instructions for Ubuntu are almost identical to those for Fedora Core 6. Mak
 
 = Windows 2000/XP/Server 2003 =
 
-The Visual Studio 2005 solution files have been configured to find Boost 1.33.1 in {{{C:\Program Files\boost\boost_1_33_1}}}.
+The Visual Studio 2005 solution files have been configured to find Boost 1.33.1 in {{{C:\Program Files\boost\boost_1_33_1}}} and the Python includes and libraries in {{{C:\Python24\include}}} and {{{C:\Python24\libs}}}, respectively.
 
   1. Open {{{pyactivemq/win_build/pyactivemq.sln}}}
   1. Select Build | Batch Build... from the menu.
   1. Press the Select All button.
   1. Press the Build button.
-  1. Run {{{src\test\test.py}}}
-  1. Copy {{{win_build\Release\pyactivemq.dll}}} and {{{C:\Program Files\boost\boost_1_33_1\lib\boost_python-vc80-mt-gd-1_33_1.dll}}} to {{{C:\Python24\lib\site-packages}}}.
+  1. Copy {{{win_build\Release\pyactivemq.dll}}} and {{{C:\Program Files\boost\boost_1_33_1\lib\boost_python-vc80-mt-gd-1_33_1.dll}}} to {{{C:\Python24}}}.
+
+A distutils {{{setup.py}}} is also included to build with Visual Studio .NET 2003.
+
+  1. {{{python setup.py build}}}
+  1. {{{python setup.py install}}} or {{{python setup.py bdist_wininst}}}
 
 Copying the Boost DLL will be unnecessary once we figure out why static linking to the Boost libraries doesn't work.
 
+= Running the broker =
 
+ActiveMQ is a Java program, so you will need to install Sun's JRE/JDK or one of the other free alternatives to run it. I recommend using the Sun JDK.
 
+You should also download ActiveMQ itself. I'm currently testing the code with [http://people.apache.org/repo/m2-snapshot-repository/org/apache/activemq/apache-activemq/4.2-incubator-SNAPSHOT/?C=M;O=D snapshots of ActiveMQ 4.2], but [http://www.activemq.org/site/activemq-410-release.html ActiveMQ 4.1] should also work. You'll want to download the ZIP or tarball that is about 18 MB in size.
 
+Before running the unit tests, you should start the broker.
 
+ 1. Extract the archive.
+ 1. Change the working directory to {{{apache-activemq-4.2-incubator-SNAPSHOT}}} (depends on the version of ActiveMQ you are using).
+ 1. Run {{{bin/activemq}}}.
 
+= Running the unit tests =
+
+To run the unit tests on Linux, execute {{{src/test/test.py}}}. To run the unit tests on Windows, execute {{{src\test\test.py}}}.
+
+If the unit tests are successful, the following should be printed:
+
+{{{
+<pyactivemq.TextMessage object at 0xb7ed9dbc>
+<pyactivemq.BytesMessage object at 0xb7ed9dbc>
+}}}
+
+If the broker isn't running, the following should be printed:
+
+{{{
+Connection failed. Is the broker running?
+}}}
 
 
