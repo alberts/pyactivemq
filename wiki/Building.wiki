@@ -39,18 +39,20 @@ The instructions for Ubuntu are almost identical to those for Fedora Core 6. Mak
 
 The Visual Studio 2005 solution files have been configured to find Boost 1.33.1 in {{{C:\Program Files\boost\boost_1_33_1}}} and the Python includes and libraries in {{{C:\Python24\include}}} and {{{C:\Python24\libs}}}, respectively.
 
-  1. Open {{{pyactivemq/win_build/pyactivemq.sln}}}
+  1. Open {{{pyactivemq\win_build\pyactivemq.sln}}}.
   1. Select Build | Batch Build... from the menu.
   1. Press the Select All button.
   1. Press the Build button.
-  1. Copy {{{win_build\Release\pyactivemq.dll}}} and {{{C:\Program Files\boost\boost_1_33_1\lib\boost_python-vc80-mt-gd-1_33_1.dll}}} to {{{C:\Python24}}}.
+  1. Copy {{{C:\Program Files\boost\boost_1_33_1\lib\boost_python-vc80-mt-gd-1_33_1.dll}}}  and {{{C:\Program Files\boost\boost_1_33_1\lib\boost_python-vc80-mt-1_33_1.dll}}} to {{{C:\Python24}}}.
+
+Copying the Boost DLL will be unnecessary once we figure out how to link statically to the Boost libraries.
 
 A distutils {{{setup.py}}} is also included to build with Visual Studio .NET 2003.
 
+  1. Open {{{pyactivemq\win_build\vs2003-activemq-cpp.sln}}}.
+  1. Select Build | Build Solution from the menu.
   1. {{{python setup.py build}}}
   1. {{{python setup.py install}}} or {{{python setup.py bdist_wininst}}}
-
-Copying the Boost DLL will be unnecessary once we figure out why static linking to the Boost libraries doesn't work.
 
 = Running the broker =
 
@@ -80,5 +82,4 @@ If the broker isn't running, the following should be printed:
 {{{
 Connection failed. Is the broker running?
 }}}
-
 
