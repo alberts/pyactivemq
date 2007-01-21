@@ -56,6 +56,8 @@ A distutils {{{setup.py}}} is also included to build with Visual Studio .NET 200
   1. {{{python setup.py build}}}
   1. {{{python setup.py install}}} or {{{python setup.py bdist_wininst}}}
 
+You'll need the patch attached to the [https://issues.apache.org/activemq/browse/AMQCPP-48 AMQCPP-48] issue to get the library to compile with Visual Studio .NET 2003.
+
 = Running the broker =
 
 ActiveMQ is a Java program, so you will need to install Sun's JRE/JDK or one of the other free alternatives to run it. I recommend using the Sun JDK.
