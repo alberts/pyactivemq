@@ -37,6 +37,8 @@ The instructions for Ubuntu are almost identical to those for Fedora Core 6. Mak
 
 = Windows 2000/XP/Server 2003 =
 
+The easiest way to get Boost C++ libraries for Windows is probably to use the [http://www.boost-consulting.com/download.html installer provided by Boost Consulting].
+
 The Visual Studio 2005 solution files have been configured to find Boost 1.33.1 in {{{C:\Program Files\boost\boost_1_33_1}}} and the Python includes and libraries in {{{C:\Python24\include}}} and {{{C:\Python24\libs}}}, respectively.
 
   1. Open {{{pyactivemq\win_build\pyactivemq.sln}}}.
@@ -82,4 +84,3 @@ If the broker isn't running, the following should be printed:
 {{{
 Connection failed. Is the broker running?
 }}}
-
