@@ -13,3 +13,5 @@ These projects also use Boost.Python and might provide some valuable examples fo
 = Messaging =
 
  * [http://www.caucho.com/hessian/ Hessian Binary Web Service Protocol]
+ * [http://hjb.berlios.de/ HJB - the HTTP JMS Bridge]
+ * [http://hjb.python-hosting.com/ PyHJB]
