@@ -15,3 +15,5 @@ These projects also use Boost.Python and might provide some valuable examples fo
  * [http://www.caucho.com/hessian/ Hessian Binary Web Service Protocol]
  * [http://hjb.berlios.de/ HJB - the HTTP JMS Bridge]
  * [http://hjb.python-hosting.com/ PyHJB]
+ * [http://www.spread.org/ Spread]
+ * [http://www.zope.org/Members/tim_one/spread Zope.org - Python wrapper for Spread]
