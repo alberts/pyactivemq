@@ -52,7 +52,9 @@ Copying the Boost DLL will be unnecessary once we figure out how to link statica
 A distutils {{{setup.py}}} is also included to build with Visual Studio .NET 2003.
 
   1. Open {{{pyactivemq\win_build\vs2003-activemq-cpp.sln}}}.
-  1. Select Build | Build Solution from the menu.
+  1. Select Build | Batch Build... from the menu.
+  1. Press the Select All button.
+  1. Press the Build button.
   1. {{{python setup.py build}}}
   1. {{{python setup.py install}}} or {{{python setup.py bdist_wininst}}}
 
