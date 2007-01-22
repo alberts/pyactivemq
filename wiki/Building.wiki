@@ -72,7 +72,7 @@ Before running the unit tests, you should start the broker.
  1. Change the working directory to {{{apache-activemq-4.2-incubator-SNAPSHOT}}} (depends on the version of ActiveMQ you are using).
  1. Run {{{bin/activemq}}} ({{{bin\activemq.bat}}} on Windows).
 
-You may want to edit the ActiveMQ script to add {{{-server}}} to {{{ACTIVEMQ_OPTS}}}, as running the broker with the Java server VM can yield improved performance.
+You may want to edit the ActiveMQ script to add {{{-server}}} to {{{ACTIVEMQ_OPTS}}}, as running the broker with the Java server VM can yield improved performance. The server VM takes a while to "warm up", so it may take a while (a few thousand messages) before performance exceeds that obtained from the client VM.
 
 = Running the unit tests =
 
