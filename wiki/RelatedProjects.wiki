@@ -9,7 +9,6 @@ The projects listed below are related to pyactivemq in some way.
 These projects also use Boost.Python and might provide some valuable examples for wrapping the trickier parts of the ActiveMQ C++ library.
 
   * [http://pyginac.sourceforge.net/ PyGiNaC] ([http://pyginac.cvs.sourceforge.net/pyginac/pyginac/ CVS Browse])
-  * [http://sourceforge.net/projects/tnfox/ FOX for Tn]
 
 = Messaging =
 
