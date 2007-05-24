@@ -90,3 +90,7 @@ If the broker isn't running, the following should be printed:
 {{{
 Connection failed. Is the broker running?
 }}}
+
+= Source distribution =
+
+To create source distributions, execute the command {{{python setup.py sdist --formats=gztar,zip}}}
