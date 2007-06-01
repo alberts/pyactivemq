@@ -39,15 +39,14 @@ The instructions for Ubuntu are almost identical to those for Fedora Core 6. Mak
 
 The easiest way to get Boost C++ libraries for Windows is probably to use the [http://www.boost-consulting.com/download.html installer provided by Boost Consulting].
 
-The Visual Studio 2005 solution files have been configured to find Boost 1.33.1 in {{{C:\Program Files\boost\boost_1_33_1}}} and the Python includes and libraries in {{{C:\Python24\include}}} and {{{C:\Python24\libs}}}, respectively.
+The Visual Studio 2005 project files have been configured to find Boost 1.33.1 in {{{C:\Program Files\boost\boost_1_33_1}}} and the Python includes and libraries in {{{C:\Python24\include}}} and {{{C:\Python24\libs}}}, respectively.
 
   1. Open {{{pyactivemq\win_build\pyactivemq.sln}}}.
   1. Select Build | Batch Build... from the menu.
   1. Press the Select All button.
   1. Press the Build button.
-  1. Copy {{{C:\Program Files\boost\boost_1_33_1\lib\boost_python-vc80-mt-gd-1_33_1.dll}}}  and {{{C:\Program Files\boost\boost_1_33_1\lib\boost_python-vc80-mt-1_33_1.dll}}} to {{{C:\Python24}}}.
 
-Copying the Boost DLL will be unnecessary once we figure out how to link statically to the Boost libraries.
+The project files can also be modified to use Boost 1.34.0.
 
 A distutils {{{setup.py}}} is also included to build with Visual Studio .NET 2003.
 
@@ -58,7 +57,7 @@ A distutils {{{setup.py}}} is also included to build with Visual Studio .NET 200
   1. {{{python setup.py build}}}
   1. {{{python setup.py install}}} or {{{python setup.py bdist_wininst}}}
 
-~~You'll need the patch attached to the [https://issues.apache.org/activemq/browse/AMQCPP-48 AMQCPP-48] issue to get the library to compile with Visual Studio .NET 2003.~~ The AMQCPP-48 issue has been resolved.
+~~You'll need the patch attached to the [https://issues.apache.org/activemq/browse/AMQCPP-48 AMQCPP-48] issue to get the library to compile with Visual Studio .NET 2003.~~
 
 = Running the broker =
 
