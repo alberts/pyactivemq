@@ -78,19 +78,6 @@ You may want to edit the ActiveMQ script to add {{{-server}}} to {{{ACTIVEMQ_OPT
 
 To run the unit tests on Linux, execute {{{src/test/test.py}}}. To run the unit tests on Windows, execute {{{src\test\test.py}}}.
 
-If the unit tests are successful, the following should be printed:
-
-{{{
-<pyactivemq.TextMessage object at 0xb7ed9dbc>
-<pyactivemq.BytesMessage object at 0xb7ed9dbc>
-}}}
-
-If the broker isn't running, the following should be printed:
-
-{{{
-Connection failed. Is the broker running?
-}}}
-
 = Source distribution =
 
 To create source distributions, execute the command {{{python setup.py sdist --formats=gztar,zip}}}
