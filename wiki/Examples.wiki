@@ -4,37 +4,10 @@
 
 This example shows how to send pickled Python objects (in this case, [http://www.scipy.org/ NumPy] arrays).
 
-{{{
-#!/usr/bin/env python
+[http://pyactivemq.googlecode.com/svn/trunk/src/examples/numpypickle.py]
 
-from pyactivemq import ActiveMQConnectionFactory
-from numpy.testing import assert_array_equal
-import numpy as N
+= Asynchronous message listener =
 
-# generate random array containing 100*100 doubles
-x = N.random.randn(100, 100)
+The latest code in trunk (added after pyactivemq 0.0.2 was released) supports asynchronous message listeners.
 
-f = ActiveMQConnectionFactory('tcp://localhost:61613')
-conn = f.createConnection()
-session = conn.createSession()
-queue = session.createQueue('arrays')
-consumer = session.createConsumer(queue)
-producer = session.createProducer(queue)
-conn.start()
-
-def test():
-    for i in xrange(200):
-        m = session.createBytesMessage()
-        # pickle array into BytesMessage's body
-        m.bodyBytes = x.dumps()
-        producer.send(m)
-        m2 = consumer.receive(1000)
-        assert m2 is not None
-        # unpickle array from BytesMessage's body
-        y = N.loads(m2.bodyBytes)
-        assert_array_equal(x, y)
-
-from timeit import Timer
-t = Timer('test()', 'from __main__ import test')
-print t.timeit(1)
-}}}
+[http://pyactivemq.googlecode.com/svn/trunk/src/examples/asynclistener.py]
