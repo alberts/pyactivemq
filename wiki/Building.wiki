@@ -4,7 +4,7 @@
 
 = Common =
 
-  1. {{{svn co http://svn.apache.org/repos/asf/incubator/activemq/activemq-cpp/trunk/activemq-cpp activemq-cpp}}}
+  1. {{{svn co http://svn.apache.org/repos/asf/activemq/activemq-cpp/trunk activemq-cpp}}}
   1. {{{svn co http://pyactivemq.googlecode.com/svn/trunk pyactivemq}}}
 
 = Fedora Core 6 =
