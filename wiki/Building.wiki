@@ -37,18 +37,20 @@ The instructions for Ubuntu are almost identical to those for Fedora Core 6. Mak
 
 = Windows 2000/XP/Server 2003 =
 
-The easiest way to get Boost C++ libraries for Windows is probably to use the [http://www.boost-consulting.com/download.html installer provided by Boost Consulting].
+Install [http://www.python.org/download/releases/2.5.1/ Python 2.5.1] to {{{C:\Python25}}}.
 
-The Visual Studio 2005 project files have been configured to find Boost 1.33.1 in {{{C:\Program Files\boost\boost_1_33_1}}} and the Python includes and libraries in {{{C:\Python24\include}}} and {{{C:\Python24\libs}}}, respectively.
+To install the Boost libraries, use the [http://www.boost-consulting.com/download.html installer provided by Boost Consulting]. Note that these binaries are linked against a specific version of Python (Python 2.4 in the case of Boost 1.33.1 and Python 2.5 in the case of Boost 1.34.0).
+
+The Visual Studio 2005 project files have been configured to find Boost 1.34.0 in {{{C:\Program Files\boost\boost_1_34_0}}} and the Python includes and libraries in {{{C:\Python25\include}}} and {{{C:\Python25\libs}}}, respectively.
 
   1. Open {{{pyactivemq\win_build\pyactivemq.sln}}}.
   1. Select Build | Batch Build... from the menu.
   1. Press the Select All button.
   1. Press the Build button.
 
-The project files can also be modified to use Boost 1.34.0.
+To build with Visual C++ Express, install the Platform SDK or the Windows SDK and add something like {{{C:\Program Files\Microsoft Platform SDK\Include}}} to the include directories and {{{C:\Program Files\Microsoft Platform SDK\Lib}}} to the library directories.
 
-A distutils {{{setup.py}}} is also included to build with Visual Studio .NET 2003.
+A distutils {{{setup.py}}} is included to build with Visual Studio .NET 2003. Before building the Python module itself, you should compile AMQCPP with the same version of Visual Studio.
 
   1. Open {{{pyactivemq\win_build\vs2003-activemq-cpp.sln}}}.
   1. Select Build | Batch Build... from the menu.
