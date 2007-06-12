@@ -7,9 +7,9 @@
   1. {{{svn co http://svn.apache.org/repos/asf/activemq/activemq-cpp/trunk activemq-cpp}}}
   1. {{{svn co http://pyactivemq.googlecode.com/svn/trunk pyactivemq}}}
 
-= Fedora Core 6 =
+= Fedora Core =
 
-  1. {{{yum install automake autoconf libtool cppunit-devel python-devel boost-devel}}}
+  1. {{{yum install automake autoconf libtool e2fsprogs-devel cppunit-devel python-devel boost-devel}}}
   1. {{{cd activemq-cpp}}}
   1. {{{./autogen.sh && ./configure --prefix=$HOME/opt && make && make install}}}
   1. {{{cd ../pyactivemq}}}
