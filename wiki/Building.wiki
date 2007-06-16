@@ -77,7 +77,7 @@ You may want to edit the ActiveMQ script to add {{{-server}}} to {{{ACTIVEMQ_OPT
 
 = Running the unit tests =
 
-To run the unit tests on Linux, execute {{{src/test/test.py}}}. To run the unit tests on Windows, execute {{{src\test\test.py}}}.
+To run the unit tests on Linux, execute {{{src/test/alltests.py}}}. To run the unit tests on Windows, execute {{{src\test\alltests.py}}}.
 
 = Source distribution =
 
