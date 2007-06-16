@@ -65,7 +65,7 @@ A distutils {{{setup.py}}} is included to build with Visual Studio .NET 2003. Be
 
 ActiveMQ is a Java program, so you will need to install Sun's JRE/JDK or one of the other free alternatives to run it. I recommend using the Sun JDK.
 
-You should also download ActiveMQ itself. I'm currently testing the code with [http://people.apache.org/repo/m2-snapshot-repository/org/apache/activemq/apache-activemq/4.2-incubator-SNAPSHOT/?C=M;O=D snapshots of ActiveMQ 4.2], but [http://activemq.apache.org/activemq-411-release.html ActiveMQ 4.1.1] also works. You'll want to download the ZIP or tarball that is about 18 MB in size.
+You should also download ActiveMQ itself. I'm currently testing the code with [http://people.apache.org/repo/m2-snapshot-repository/org/apache/activemq/apache-activemq/5.0-SNAPSHOT/ snapshots of ActiveMQ 5.0], but [http://activemq.apache.org/activemq-411-release.html ActiveMQ 4.1.1] also works. You'll want to download the ZIP or tarball that is about 18 MB in size.
 
 Before running the unit tests, you should start the broker.
 
