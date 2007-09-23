@@ -81,4 +81,5 @@ To run the unit tests on Linux, execute {{{src/test/alltests.py}}}. To run the u
 
 = Source distribution =
 
-To create source distributions, execute the command {{{python setup.py sdist --formats=gztar,zip}}}
+To create source distributions, execute the command {{{python setup.py sdist --formats=gztar,zip}}}. Make sure you have a tar command in your path.
+ 
