@@ -4,16 +4,16 @@
 
 This example shows how to send pickled Python objects (in this case, [http://www.scipy.org/ NumPy] arrays).
 
-[http://pyactivemq.googlecode.com/svn/trunk/src/examples/numpypickle.py]
+[http://code.google.com/p/pyactivemq/source/browse/trunk/src/examples/numpypickle.py]
 
 = Asynchronous message listener =
 
 The latest code in trunk (added after pyactivemq 0.0.2 was released) supports asynchronous message listeners.
 
-[http://pyactivemq.googlecode.com/svn/trunk/src/examples/asynclistener.py]
+[http://code.google.com/p/pyactivemq/source/browse/trunk/src/examples/asynclistener.py]
 
 = Durable subscription =
 
 This example corresponds to [http://java.sun.com/javaee/5/docs/tutorial/examples/jms/advanced/durablesubscriberexample/src/java/DurableSubscriberExample.java DurableSubscriberExample.java] described in the [http://java.sun.com/javaee/5/docs/tutorial/doc/ Java EE 5 Tutorial] in Chapter 31 under Creating Robust JMS Applications.
 
-[http://pyactivemq.googlecode.com/svn/trunk/src/examples/DurableSubscriberExample.py]
+[http://code.google.com/p/pyactivemq/source/browse/trunk/src/examples/DurableSubscriberExample.py]
