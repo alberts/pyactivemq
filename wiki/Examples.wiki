@@ -14,6 +14,6 @@ The latest code in trunk (added after pyactivemq 0.0.2 was released) supports as
 
 = Durable subscription =
 
-This example corresponds to [http://java.sun.com/javaee/5/docs/tutorial/examples/jms/advanced/durablesubscriberexample/src/java/DurableSubscriberExample.java DurableSubscriberExample.java] described in the [http://java.sun.com/javaee/5/docs/tutorial/doc/ Java EE 5 Tutorial] in Chapter 31 under Creating Robust JMS Applications.
+This example corresponds to the DurableSubscriberExample.java described in the [http://java.sun.com/javaee/5/docs/tutorial/doc/ Java EE 5 Tutorial] in Chapter 31 under Creating Robust JMS Applications.
 
 [http://code.google.com/p/pyactivemq/source/browse/trunk/src/examples/DurableSubscriberExample.py]
