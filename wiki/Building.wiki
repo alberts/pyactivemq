@@ -98,7 +98,7 @@ Traceback (most recent call last):
 ImportError: /usr/lib64/libboost_python.so.3: undefined symbol: PyUnicodeUCS4_FromEncodedObject
 }}}
 
-This can happen if you try to run the tests using a different Python installation than the one that Boost.Python was compiled against.
+This can happen if you try to run the tests using a different Python installation than the one that pyactivemq and Boost.Python were compiled with.
 
 = Source distribution =
 
