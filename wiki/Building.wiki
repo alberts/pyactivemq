@@ -102,5 +102,16 @@ This can happen if you try to run the tests using a different Python installatio
 
 = Source distribution =
 
-To create source distributions, execute the command {{{python setup.py sdist --formats=gztar,zip}}}. Make sure you have a tar command in your path.
+To create source distributions, execute the command {{{python setup.py sdist --formats=gztar,zip}}}.
+
+Make sure you have a tar command in your path.
  
+= API documentation =
+
+API documentation can be generated using [http://epydoc.sourceforge.net/ Epydoc]:
+
+{{{
+PYTHONPATH=build/lib.linux-x86_64-2.5 epydoc -v --check pyactivemq
+PYTHONPATH=build/lib.linux-x86_64-2.5 epydoc -v --html -o doc  pyactivemq
+PYTHONPATH=build/lib.linux-x86_64-2.5 epydoc -v --pdf -o doc pyactivemq
+}}}
