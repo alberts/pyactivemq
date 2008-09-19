@@ -116,3 +116,5 @@ PYTHONPATH=build/lib.linux-x86_64-2.5 epydoc -v --check pyactivemq
 PYTHONPATH=build/lib.linux-x86_64-2.5 epydoc -v --html -o doc  pyactivemq
 PYTHONPATH=build/lib.linux-x86_64-2.5 epydoc -v --pdf -o doc pyactivemq
 }}}
+
+When adding documentation to SVN, set the {{{svn:mime-type}}} property to {{{text/html}}} on the HTML files.
