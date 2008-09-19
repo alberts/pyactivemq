@@ -87,6 +87,19 @@ You may want to edit the ActiveMQ script to add {{{-server}}} to {{{ACTIVEMQ_OPT
 
 To run the unit tests on Linux, execute {{{src/test/alltests.py}}}. To run the unit tests on Windows, execute {{{src\test\alltests.py}}}.
 
+When running the unit tests, you might see the following error:
+
+{{{
+Traceback (most recent call last):
+  File "alltests.py", line 20, in <module>
+    from test_openwire_async import *
+  File "/path/to/pyactivemq/src/test/test_openwire_async.py", line 17, in <module>
+    import pyactivemq
+ImportError: /usr/lib64/libboost_python.so.3: undefined symbol: PyUnicodeUCS4_FromEncodedObject
+}}}
+
+This can happen if you try to run the tests using a different Python installation than the one that Boost.Python was compiled against.
+
 = Source distribution =
 
 To create source distributions, execute the command {{{python setup.py sdist --formats=gztar,zip}}}. Make sure you have a tar command in your path.
