@@ -33,7 +33,7 @@ error: invalid Python installation: unable to open /usr/lib64/python2.5/config/M
 
 you need to install the {{{python-devel}}} package.
 
-You will need to edit the {{{library_dirs}}} in {{{setup.py}}} to add the directory where you installed the ActiveMQ C++ libraries ({{{$HOME/opt/lib}}} in the example above).
+You will need to edit the {{{library_dirs}}} in {{{setup.py}}} to add the directory where you installed the ActiveMQ C++ libraries ({{{$HOME/opt/lib}}} in the example above). You may also need to edit {{{include_dirs}}} and/or {{{extra_link_args}}}.
 
 = Debian/Ubuntu =
 
