@@ -64,7 +64,7 @@ bjam --toolset=msvc address-model=64 --build-type=complete --prefix="C:\Program 
 
 The command should be run inside the Visual Studio Command Prompt that corresponds to your architecture.
 
-When installing both 32-bit and 64-bit Python on Windows x64, install the 32-bit version first, to an alternate directory like C:\Python26.x86.
+When installing both 32-bit and 64-bit Python on Windows x64, install the 32-bit version first, to an alternate directory like {{{C:\Python26.x86}}}.
 
 == APR ==
 
@@ -74,7 +74,7 @@ Download and build apr, apr-util and apr-iconv.
 
 == ActiveMQ C++ ==
 
-AMQCPP should be compiled using the project file provided in the win_build directory of pyactivemq.
+AMQCPP can be compiled with Visual Studio 2008 by using the project file provided in the {{{win_build}}} directory of pyactivemq.
 
 == pyactivemq ==
 
