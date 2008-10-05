@@ -10,7 +10,7 @@
 = Fedora Core =
 
   1. {{{yum install automake autoconf libtool doxygen graphviz}}}
-  1. {{{yum e2fsprogs-devel cppunit-devel python-devel boost-devel apr-devel apr-util-devel}}}
+  1. {{{yum install e2fsprogs-devel cppunit-devel python-devel boost-devel apr-devel apr-util-devel}}}
   1. {{{cd activemq-cpp}}}
   1. {{{./autogen.sh && ./configure --prefix=$HOME/opt && make && make install}}}
   1. {{{cd ../pyactivemq}}}
