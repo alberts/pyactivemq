@@ -115,7 +115,7 @@ You may want to edit the ActiveMQ script to add {{{-server}}} to {{{ACTIVEMQ_OPT
 
 = Running the unit tests =
 
-To run the unit tests on Linux, execute {{{src/test/alltests.py}}}. To run the unit tests on Windows, execute {{{src\test\alltests.py}}}.
+To run the unit tests, execute {{{alltests.py}}} in the {{{src/test}}} directory. You may also wish to run {{{stresstests.py}}}, which calls the unit tests 100 times in a loop.
 
 When running the unit tests, you might see the following error:
 
