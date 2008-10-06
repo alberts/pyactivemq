@@ -7,12 +7,14 @@
   1. {{{svn co http://svn.apache.org/repos/asf/activemq/activemq-cpp/trunk activemq-cpp}}}
   1. {{{svn co http://pyactivemq.googlecode.com/svn/trunk pyactivemq}}}
 
+You should also be able to use a recent release of ActiveMQ C++, such as 2.2.1, instead of SVN trunk.
+
 = Fedora Core =
 
   1. {{{yum install automake autoconf libtool doxygen graphviz}}}
   1. {{{yum install e2fsprogs-devel cppunit-devel python-devel boost-devel apr-devel apr-util-devel}}}
   1. {{{cd activemq-cpp}}}
-  1. {{{./autogen.sh && ./configure --prefix=$HOME/opt && make && make install}}}
+  1. {{{./autogen.sh && ./configure --prefix=/opt/activemq-cpp && make && make install}}}
   1. {{{cd ../pyactivemq}}}
   1. {{{python setup.py build}}}
   1. {{{python setup.py install}}} or {{{python setup.py bdist_rpm}}}
@@ -33,7 +35,7 @@ error: invalid Python installation: unable to open /usr/lib64/python2.5/config/M
 
 you need to install the {{{python-devel}}} package.
 
-You may need to edit the {{{include_dirs}}}, {{{library_dirs}}} and {{{extra_link_args}}} in {{{setup.py}}} to include the directories where you installed the ActiveMQ C++ libraries ({{{$HOME/opt/lib}}} in the example above).
+You may need to edit the {{{include_dirs}}}, {{{library_dirs}}} and {{{extra_link_args}}} in {{{setup.py}}} to include the directories where you installed the ActiveMQ C++ libraries ({{{/opt/activemq-cpp}}} in the example above).
 
 = Debian/Ubuntu =
 
