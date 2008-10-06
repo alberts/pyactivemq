@@ -18,6 +18,21 @@ The latest code in trunk supports asynchronous message listeners.
 
 [http://code.google.com/p/pyactivemq/source/browse/trunk/src/examples/asynclistener.py]
 
+Expected output (varies due to the threads associated with consumers):
+
+{{{
+consumer0 got: hello0
+consumer1 got: hello0
+consumer2 got: hello0
+consumer0 got: hello1
+consumer2 got: hello1
+consumer1 got: hello1
+...
+consumer0 got: hello97
+consumer0 got: hello98
+consumer0 got: hello99
+}}}
+
 = Durable subscription =
 
 This example corresponds to the !DurableSubscriberExample.java described in the [http://java.sun.com/javaee/5/docs/tutorial/doc/ Java EE 5 Tutorial] in Chapter 31 under Creating Robust JMS Applications.
