@@ -14,7 +14,6 @@
   1. {{{cd activemq-cpp}}}
   1. {{{./autogen.sh && ./configure --prefix=$HOME/opt && make && make install}}}
   1. {{{cd ../pyactivemq}}}
-  1. Edit {{{setup.py}}} to include {{{$HOME/opt/lib}}} as a library directory
   1. {{{python setup.py build}}}
   1. {{{python setup.py install}}} or {{{python setup.py bdist_rpm}}}
 
@@ -34,7 +33,7 @@ error: invalid Python installation: unable to open /usr/lib64/python2.5/config/M
 
 you need to install the {{{python-devel}}} package.
 
-You will need to edit the {{{library_dirs}}} in {{{setup.py}}} to add the directory where you installed the ActiveMQ C++ libraries ({{{$HOME/opt/lib}}} in the example above). You may also need to edit {{{include_dirs}}} and/or {{{extra_link_args}}}.
+You may need to edit the {{{include_dirs}}}, {{{library_dirs}}} and {{{extra_link_args}}} in {{{setup.py}}} to include the directories where you installed the ActiveMQ C++ libraries ({{{$HOME/opt/lib}}} in the example above).
 
 = Debian/Ubuntu =
 
