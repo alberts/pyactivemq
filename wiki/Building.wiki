@@ -71,7 +71,7 @@ When installing both 32-bit and 64-bit Python on Windows x64, install the 32-bit
 
 AMQCPP depends on the [http://apr.apache.org/ Apache Portable Runtime].
 
-Download and build apr, apr-util and apr-iconv.
+You must download and build apr, apr-util and apr-iconv on Windows.
 
 == ActiveMQ C++ ==
 
