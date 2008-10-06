@@ -48,7 +48,7 @@ The instructions for Ubuntu are almost identical to those for Fedora Core. Make 
 = Windows 2000/XP/Server 2003 =
 
 == Boost ==
-As of this writing, [http://www.boost-consulting.com/Boost Consulting] does not provide an installer for Boost 1.36.0, so it must be compiled manually.
+As of this writing, [http://www.boost-consulting.com/ Boost Consulting] does not provide an installer for Boost 1.36.0, so it must be compiled manually.
 
 On 32-bit Windows, run the following command:
 
