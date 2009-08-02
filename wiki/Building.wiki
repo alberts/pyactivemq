@@ -44,6 +44,8 @@ The instructions for Ubuntu are almost identical to those for Fedora Core. Make 
  * libcppunit-dev
  * uuid-dev
 
+See also [http://www.nighttale.net/activemq/pyactivemq-on-ubuntu.html pyactivemq on Ubuntu].
+
 = Windows 2000/XP/Server 2003 =
 
 == Boost ==
