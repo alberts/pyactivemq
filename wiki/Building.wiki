@@ -102,12 +102,12 @@ C:\Python26.x86\python.exe setup.py bdist_wininst
 
 ActiveMQ is a Java program, so you will need to install Sun's JRE/JDK or one of the other free alternatives to run it. I recommend using the Sun JDK.
 
-The latest release of pyactivemq has been tested with [http://activemq.apache.org/activemq-510-release.html Apache ActiveMQ 5.1.0].
+The latest release of pyactivemq has been tested with [http://activemq.apache.org/activemq-520-release.html Apache ActiveMQ 5.2.0].
 
 Before running the unit tests, you should start the broker.
 
  1. Extract the archive.
- 1. Change the working directory to {{{apache-activemq-5.1.0}}} 
+ 1. Change the working directory to {{{apache-activemq-5.2.0}}} 
  1. Run {{{bin/activemq}}} ({{{bin\activemq.bat}}} on Windows).
 
 You may have to set the {{{JAVA_HOME}}} environment variable if your Java installation is not found by the batch file.
