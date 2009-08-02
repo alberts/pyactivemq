@@ -6,7 +6,7 @@
   1. {{{svn co https://svn.apache.org/repos/asf/activemq/activemq-cpp/trunk/activemq-cpp activemq-cpp}}}
   1. {{{svn co http://pyactivemq.googlecode.com/svn/trunk pyactivemq}}}
 
-You should also be able to use a recent release of ActiveMQ C++, such as 2.2.1, instead of SVN trunk.
+pyactivemq SVN trunk is being updated to work with ActiveMQ C++ 3.0. To use an older version of ActiveMQ C++, use pyactivemq 0.1.0.
 
 = Fedora Core =
 
